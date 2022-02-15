@@ -3,8 +3,6 @@
 
 Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
 
-Warning! The code does its job, but is extremely inefficient and naive
-
 All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
 
 Author: Mikhail Ivanov
