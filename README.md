@@ -29,16 +29,16 @@ All molecular images are generated using **VMD<sup>3**.
 1. Check the input settings in the `rdf-init.dat`
 2. Run the RDF calculation: `python rdf.py rdf-init.dat > rdf.log`
 
-# Required python libraries:
+# Required python libraries
 - `numpy`
 - `numba`
 - `matplotlib`
 
-# Supplementary data:
+# Supplementary data
 - MD and MC simulation data
 - Progress reports for the course
   
-# References:
+# References
 1. Frenkel, Daan, and Berend Smit. "Understanding molecular simulation: from algorithms to applications." *Vol. 1. Elsevier, 2001.*
 2. Rahman, Aneesur. "Correlations in the motion of atoms in liquid argon." *Physical review 136.2A (1964): A405.*
 3. Humphrey, William, Andrew Dalke, and Klaus Schulten. *"VMD: visual molecular dynamics." Journal of molecular graphics 14.1 (1996): 33-38.*
