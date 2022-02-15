@@ -1,0 +1,8 @@
+### rdf-init.dat file: parameters for RDF calculation ###
+RDF
+0.02
+15
+MC-data/MCtraj_5.0M_1374.0_95.0K.dat
+# Bin width (Å)
+# Max range (Å)
+# Trajectory filename (dat-file)

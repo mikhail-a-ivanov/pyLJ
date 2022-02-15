@@ -1,0 +1,26 @@
+### MCinit file: Forcefield and MC parameters
+Forcefield
+Ar
+39.792
+1.654 
+3.405
+# Atom name
+# Atomic mass [amu]
+# Eps [10^-21 J]
+# Sigma [Å] 
+MCparameters
+5000000
+0.25
+100000
+95
+500000
+# Steps [n]
+# Displacement step [Å]
+# Output frequency
+# Temperature [K]
+# Equilibration steps [n]
+Lattice
+10
+1374
+# Number of lattice points on each axis
+# Density of the system [kg/m^3]

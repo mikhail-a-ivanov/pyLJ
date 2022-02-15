@@ -1,0 +1,26 @@
+### md-init.dat file: Forcefield and MD parameters ###
+Forcefield
+Ar
+39.792
+1.654 
+3.405
+# Atom name
+# Atomic mass [amu]
+# Eps [10^-21 J]
+# Sigma [Å] 
+MDparameters
+3000
+0.004
+100
+95
+300
+# Steps [n]
+# Step length [ps]
+# Output frequency
+# Temperature [K]
+# Equilibration steps [n]
+Lattice
+10
+1374
+# Number of lattice points on each axis
+# Density of the system [kg/m^3]

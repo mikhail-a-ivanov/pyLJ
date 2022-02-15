@@ -1,0 +1,26 @@
+
+#############
+### md.py ###
+#############
+
+Author: Mikhail Ivanov
+Originally written in 2019, minor revisions in 2022
+
+Molecular dynamics of a Lennard-Jones fluid code 
+Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
+
+Warning! The code does its job, but is extremely inefficient and naive
+All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
+
+Running MD simulation of 1000 LJ particles at 95.0 K for 12.0 ps...
+
+Total number of steps: 3000
+Number of equilibration steps: 300
+Cubic box side: 36.405 A
+Density: 1374.000 kg/m^3
+Output frequency: 100
+
+Calculation time: 287.601 seconds
+Write data time = 0.089 seconds
+Save global data time = 1.746 seconds
+Save XYZ time = 0.209 seconds

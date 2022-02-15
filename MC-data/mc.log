@@ -1,0 +1,30 @@
+
+#############
+### mc.py ###
+#############
+
+Author: Mikhail Ivanov
+Originally written in 2019, minor revisions in 2022
+
+Monte Carlo simulation of a Lennard-Jones fluid code 
+Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
+
+Warning! The code does its job, but is extremely inefficient and naive
+All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
+
+Running MC simulation of 1000 LJ particles at 95.0 K...
+
+Number of equilibration MC steps: 500000
+Number of production MC steps: 5000000
+Maximum displacement step along each axis: 0.25 Angstrom
+Cubic box side: 36.405 A
+Density: 1374.000 kg/m^3
+Output frequency: 100000
+
+Running Monte Carlo equilibration...
+Equilibration time: 71.135 seconds
+Acceptance ratio = 0.352524
+
+Running Monte Carlo production simulation...
+Production simulation time: 723.271 seconds
+Acceptance ratio = 0.364167

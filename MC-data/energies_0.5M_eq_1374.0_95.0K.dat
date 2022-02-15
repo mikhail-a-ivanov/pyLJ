@@ -1,0 +1,12 @@
+# Monte Carlo equilibration energies (eV) for the system of 1000 Ar atoms at 95.0 K and 1374 kg/m^3 density
+# Number of performed MC equilibration steps = 500000
+# # Output frequency is: 100000
+# Displacement step = 0.25 Angstrom
+# Acceptance ratio = 0.352524
+# Calculation time: 71.135 seconds
+-58.4525
+-59.0351
+-59.7594
+-59.8128
+-59.8435
+-59.7906

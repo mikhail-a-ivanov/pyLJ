@@ -1,0 +1,16 @@
+
+##############
+### rdf.py ###
+##############
+
+Author: Mikhail Ivanov
+Originally written in 2019, minor revisions in 2022
+
+RDF analysis of a Lennard-Jones fluid code 
+Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
+
+Warning! The code does its job, but is extremely inefficient and naive
+All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
+
+Reading Molecular Dynamics data from traj_12.0ps_1374.0_95.0K.dat...
+RDF calculation time = 7.399 seconds
