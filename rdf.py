@@ -16,19 +16,7 @@ Originally written in 2019, minor revisions in 2022
 
 RDF analysis of a Lennard-Jones fluid code 
 Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
-
-All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
 """
-
-# Some unit transformations:
-# Atomic mass unit to kg
-amu = 1.66605304*10**(-27)
-# eV to J
-eV = 1.6021766208*10**(-19)
-# Boltzmann constant, J/K
-kB = 1.38064852*10**(-23)
-# Setting the name of the file containing information for RDF calculation
-RDF_file = sys.argv[1]
 
 def RDFinit(RDF_file):
     """
@@ -186,20 +174,37 @@ def plotRDF():
 
 if __name__ == "__main__":
     print(header)
+    # Some unit transformations:
+    # Atomic mass unit to kg
+    amu = 1.66605304*10**(-27)
+    # eV to J
+    eV = 1.6021766208*10**(-19)
+    # Boltzmann constant, J/K
+    kB = 1.38064852*10**(-23)
+    
+    # Setting the name of the file containing information for RDF calculation
+    RDF_file = sys.argv[1]
+    
     # Get RDF data
     RDF_parm = RDFinit(RDF_file)
     # Trajectory filename
     trajname = RDF_parm[2]
+    
     # Read parameters
     MD, MC, N, atomname, sigma, T, density, box_side, Eq, steps, outfreq, dt = ReadParameters(trajname)
+    
+    # Recalculate parameters
     Eq_recorded = int(Eq/outfreq)
     volume_ang = box_side**3  # volume of the system in Angstrom^3
     box = np.array([box_side/sigma, box_side/sigma, box_side/sigma])
+    
     # RDF parameters
     dr = float(RDF_parm[0]) / sigma
     rmax = float(RDF_parm[1]) / sigma
+    
     # Read trajectory
     output = ReadTraj(trajname)
+    
     # Calculate RDF and CN
     start = time.time()                  
     RDF_data = RDFcalc(output)
@@ -209,7 +214,9 @@ if __name__ == "__main__":
     totalRDF = RDF_data[2]
     CN = CalculateCN(dist, RDF)
     print('RDF calculation time = ' + format(end-start, '#.3f') + ' seconds')
+    
     # Save RDF data
     SaveRDF(dist, RDF, CN)
+    
     # Plot RDF data
     plotRDF()

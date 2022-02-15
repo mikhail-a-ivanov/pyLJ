@@ -15,19 +15,7 @@ Originally written in 2019, minor revisions in 2022
 
 Monte Carlo simulation of a Lennard-Jones fluid code 
 Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
-
-All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
 """
-
-# Some unit transformations:
-# Atomic mass unit to kg
-amu = 1.66605304*10**(-27)
-# eV to J
-eV = 1.6021766208*10**(-19)
-# Boltzmann constant, J/K
-kB = 1.38064852*10**(-23)
-# Setting the name of the file containing forcefield information and MC parameters (number of steps, displacement step length)
-MC_file = sys.argv[1]
 
 def MCinit(MC_file):
     """
@@ -257,19 +245,32 @@ def SaveXYZTrajectory(data, filename):
 
 if __name__ == "__main__":
     print(header)
+    # Some unit transformations:
+    # Atomic mass unit to kg
+    amu = 1.66605304*10**(-27)
+    # eV to J
+    eV = 1.6021766208*10**(-19)
+    # Boltzmann constant, J/K
+    kB = 1.38064852*10**(-23)
+    
+    # Setting the name of the file containing forcefield information and MC parameters (number of steps, displacement step length)
+    MC_file = sys.argv[1]
+    
     # Get MC data
     MCinit_data = MCinit(MC_file)
     forcefield = MCinit_data[0]
     MC_parameters = MCinit_data[1]
     lattice_data = MCinit_data[2]
-    # Some global arguments:
-    # Forcefield parameters
+  
+    # Get forcefield parameters
     atomname = forcefield[0] # name of the atom
     atommass = float(forcefield[1]) # amu
     eps = float(forcefield[2]) * (10**-21) # Joules
     sigma = float(forcefield[3]) # Å
+    
     # Energy conversion from J to eV
     convert_E = eps/eV
+    
     # MC parameters
     steps = int(MC_parameters[0]) # N steps
     delta = float(MC_parameters[1]) # Length of the displacement step, Å
@@ -277,6 +278,7 @@ if __name__ == "__main__":
     T = float(MC_parameters[3]) # Temperature, K
     T_red = kB*T/eps # Temperature in reduced units
     Eq = int(MC_parameters[4]) # Number of equilibration steps
+    
     # Lattice 
     size = int(lattice_data[0]) # Number of lattice points
     density = float(lattice_data[1]) # Desired density of the system, kg/m^3
