@@ -14,7 +14,7 @@ All molecular images are generated using **VMD<sup>3**.
 **References:**
 1. Frenkel, Daan, and Berend Smit. "Understanding molecular simulation: from algorithms to applications." *Vol. 1. Elsevier, 2001.*
 2. Rahman, Aneesur. "Correlations in the motion of atoms in liquid argon." *Physical review 136.2A (1964): A405.*
-3. Humphrey, William, Andrew Dalke, and Klaus Schulten. "VMD: visual molecular dynamics." Journal of molecular graphics 14.1 (1996): 33-38.
+3. Humphrey, William, Andrew Dalke, and Klaus Schulten. *"VMD: visual molecular dynamics." Journal of molecular graphics 14.1 (1996): 33-38.*
 4. Lectures from the course
 
 # How to run
