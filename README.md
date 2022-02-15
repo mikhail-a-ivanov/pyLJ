@@ -1,15 +1,17 @@
 # pyLJ
 ***A simple Python-based Molecular Dynamics and Metropolis Monte Carlo code for simulating a Lennard-Jones fluid***
 
-Author: Mikhail Ivanov
-
-Originally written in 2019, minor revisions in 2022
-
 Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
 
 Warning! The code does its job, but is extremely inefficient and naive
 
 All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
+
+Author: Mikhail Ivanov
+
+Originally written in 2019, minor revisions in 2022
+
+Special thanks to Jonatan Öström (my teaching assistant from the course)
 
 # How to run
 ## MD:
