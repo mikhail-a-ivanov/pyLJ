@@ -11,11 +11,10 @@ Originally written in 2019, minor revisions in 2022
 
 All molecular images are generated using **VMD<sup>3**.
 
-**References:**
-1. Frenkel, Daan, and Berend Smit. "Understanding molecular simulation: from algorithms to applications." *Vol. 1. Elsevier, 2001.*
-2. Rahman, Aneesur. "Correlations in the motion of atoms in liquid argon." *Physical review 136.2A (1964): A405.*
-3. Humphrey, William, Andrew Dalke, and Klaus Schulten. *"VMD: visual molecular dynamics." Journal of molecular graphics 14.1 (1996): 33-38.*
-4. Lectures from the course
+# Examples
+## Liquid argon simulation at -178 °C
+ 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/8glY-WNcKHY/0.jpg)](http://www.youtube.com/watch?v=8glY-WNcKHY "Liquid Argon simulation")
 
 # How to run
 ## MD:
@@ -38,4 +37,9 @@ All molecular images are generated using **VMD<sup>3**.
 # Supplementary data:
 - MD and MC simulation data
 - Progress reports for the course
-- Movies!
+  
+# References:
+1. Frenkel, Daan, and Berend Smit. "Understanding molecular simulation: from algorithms to applications." *Vol. 1. Elsevier, 2001.*
+2. Rahman, Aneesur. "Correlations in the motion of atoms in liquid argon." *Physical review 136.2A (1964): A405.*
+3. Humphrey, William, Andrew Dalke, and Klaus Schulten. *"VMD: visual molecular dynamics." Journal of molecular graphics 14.1 (1996): 33-38.*
+4. Lectures from the course
