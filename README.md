@@ -14,7 +14,7 @@ All molecular images are generated using **VMD<sup>3**.
 # Examples
 ## Liquid argon simulation at -178 °C
  
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/8glY-WNcKHY/0.jpg)](http://www.youtube.com/watch?v=8glY-WNcKHY "Liquid Argon simulation")
+[![IMAGE ALT TEXT](https://i.imgur.com/GderjHB.jpeg)](http://www.youtube.com/watch?v=8glY-WNcKHY "Liquid Argon simulation")
 
 # How to run
 ## MD:
