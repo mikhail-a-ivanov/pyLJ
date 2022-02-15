@@ -28,3 +28,8 @@ All the critical expressions for computations are borrowed either from the lectu
 - `numpy`
 - `numba`
 - `matplotlib`
+
+# Supplementary data:
+- MD and MC simulation data
+- Progress reports for the course
+- Movies!
