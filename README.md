@@ -3,13 +3,19 @@
 
 Written as my first programming project for the 'Simulation Methods in Statistical Physics' course
 
-All the critical expressions for computations are borrowed either from the lectures or the Rahman (1964) paper
-
 Author: Mikhail Ivanov
+
+Special thanks to Jonatan Öström (my teaching assistant from the course)
 
 Originally written in 2019, minor revisions in 2022
 
-Special thanks to Jonatan Öström (my teaching assistant from the course)
+All molecular images are generated using **VMD<sup>3**.
+
+**References:**
+1. Frenkel, Daan, and Berend Smit. "Understanding molecular simulation: from algorithms to applications." *Vol. 1. Elsevier, 2001.*
+2. Rahman, Aneesur. "Correlations in the motion of atoms in liquid argon." *Physical review 136.2A (1964): A405.*
+3. Humphrey, William, Andrew Dalke, and Klaus Schulten. "VMD: visual molecular dynamics." Journal of molecular graphics 14.1 (1996): 33-38.
+4. Lectures from the course
 
 # How to run
 ## MD:
