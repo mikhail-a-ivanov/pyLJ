@@ -320,7 +320,7 @@ def SaveXYZTrajectory(filename):
                     data[t][j][i] += -box[i]*sigma
                 if data[t][j][i] < 0.0:
                     data[t][j][i] += box[i]*sigma
-                xyz[t][j].append(format(data[t][j][i], '#.7g').rjust(10))
+                xyz[t][j].append(format(data[t][j][i], '#.3f').rjust(10))
             xyz[t][j].append('  ')
     
     output_file = open(filename, 'w+')
